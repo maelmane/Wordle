@@ -36,6 +36,8 @@ class Wordle( motCherché : String ) {
 	 *
 	 * @return Le résultat de l'essai sous forme d'une chaîne de 5 caractères
 	 *         selon les mêmes critères que pour obtenirLettres
+	 *
+	 * @throws IllegalArgumentException si le mot essayé ne comporte pas exactement 5 caractères
 	 */
 	fun essayer() {
 	}
