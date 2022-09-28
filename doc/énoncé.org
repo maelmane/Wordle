@@ -37,7 +37,7 @@ Résultat attendu : Les 12 tests échouent
 Résultat attendu : 2 tests réussissent :
 
   - Étant donné le mot cherché initialisé avec des minuscules, lorsqu'on récupère la propriété, on  obtient le mot en majuscules        
-  - Étant donné un mot de 3 lettres, lorsqu'on initialise un Wordle, on obtient une exception  0s  passed    
+  - Étant donné un mot de 3 lettres, lorsqu'on initialise un Wordle, on obtient une exception
 
 ** Question 3 (20 pts) : Implémenter `essayer`
 
