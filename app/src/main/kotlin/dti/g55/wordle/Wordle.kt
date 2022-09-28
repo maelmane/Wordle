@@ -1,5 +1,12 @@
 package dti.g55.wordle
 
+/**
+ * Un mot mystère de type Wordle
+ *
+ * @param motCherché doit comporter exactement 5 lettres dans l'interval A-Z
+ *
+ * @throws IllegalArgumentException si le mot cherché ne comporte pas exactement 5 caractères
+ */
 class Wordle( motCherché : String ) {
 	// Le mot cherché
 	val motCherché : String = ""
@@ -14,6 +21,10 @@ class Wordle( motCherché : String ) {
 	 * Un souligné (_) représente une lettre absente du mot
 	 * Une minuscule représente une lettre présente dans le mot dont la position est inconnue
 	 * Une majuscule représente une lettre présente dans le mot dont la position est connue
+	 *
+	 * @return L'état des 26 lettres sous forme de chaîne
+	 *
+	 * @throws IllegalArgumentException si une lettre est dans un état illégal
 	 */
 	fun obtenirLettres() {
 	}
@@ -21,7 +32,8 @@ class Wordle( motCherché : String ) {
 	/**
 	 * Permet d'effectuer un essai
 	 *
-	 * @param Le nouveau mot essayé
+	 * @param essai Le nouveau mot essayé
+	 *
 	 * @return Le résultat de l'essai sous forme d'une chaîne de 5 caractères
 	 *         selon les mêmes critères que pour obtenirLettres
 	 */

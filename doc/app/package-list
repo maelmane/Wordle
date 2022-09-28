@@ -9,16 +9,11 @@ $dokka.location:dti.g55.wordle/App/motMystère/#/PointingToDeclaration/app/dti.
 $dokka.location:dti.g55.wordle/App/scan/#/PointingToDeclaration/app/dti.g55.wordle/-app/scan.html
 $dokka.location:dti.g55.wordle/App/w/#/PointingToDeclaration/app/dti.g55.wordle/-app/w.html
 $dokka.location:dti.g55.wordle/Wordle///PointingToDeclaration/app/dti.g55.wordle/-wordle/index.html
-$dokka.location:dti.g55.wordle/Wordle/LONGUEUR_MOT/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/-l-o-n-g-u-e-u-r_-m-o-t.html
 $dokka.location:dti.g55.wordle/Wordle/Wordle/#kotlin.String/PointingToDeclaration/app/dti.g55.wordle/-wordle/-wordle.html
-$dokka.location:dti.g55.wordle/Wordle/essayer/#kotlin.String/PointingToDeclaration/app/dti.g55.wordle/-wordle/essayer.html
+$dokka.location:dti.g55.wordle/Wordle/essayer/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/essayer.html
 $dokka.location:dti.g55.wordle/Wordle/estRéussi/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/est-réussi.html
 $dokka.location:dti.g55.wordle/Wordle/lettres/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/lettres.html
 $dokka.location:dti.g55.wordle/Wordle/motCherché/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/mot-cherché.html
 $dokka.location:dti.g55.wordle/Wordle/obtenirLettres/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/obtenir-lettres.html
-$dokka.location:dti.g55.wordle/Wordle/ÉTAT_ABSENTE/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/É-t-a-t_-a-b-s-e-n-t-e.html
-$dokka.location:dti.g55.wordle/Wordle/ÉTAT_CORRECTE/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/É-t-a-t_-c-o-r-r-e-c-t-e.html
-$dokka.location:dti.g55.wordle/Wordle/ÉTAT_INCONNUE/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/É-t-a-t_-i-n-c-o-n-n-u-e.html
-$dokka.location:dti.g55.wordle/Wordle/ÉTAT_PRÉSENTE/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/É-t-a-t_-p-rÉ-s-e-n-t-e.html
 dti.g55.wordle
 
