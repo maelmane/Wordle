@@ -12,8 +12,7 @@ Vous avez définit les classes et fonctions minimales dont vous aurez besoin et 
 
  2. Créez votre divergence de l'ébauche de projet [[https://git.dti.crosemont.quebec/plafrance/wordle][Wordle]].
 
- 3. *Rendez votre divergence privée* (Menu Paramètres/Général, section «
-Visibility, project features, permissions» dans «Project visibility», sélectionnez «Private» et «Enregistrer les modification» plus bas.)
+ 3. *Rendez votre divergence privée* (Menu Paramètres/Général, section «Visibility, project features, permissions» dans «Project visibility», sélectionnez «Private» et «Enregistrer les modification» plus bas.)
 
  4. Clonez votre divergence sur votre poste.
     
@@ -23,15 +22,17 @@ Visibility, project features, permissions» dans «Project visibility», sélect
 
 Il s'agit d'un projet Gradle que vous pouvez compiler en ligne de commande, dans IntelliJ, Android Studio ou tout autre IDE qui prend en charge Gradle.
 
-** Question 0 (5 pts) : fusionnez la branche 1_constantes dans main
+** Question 0 (5 pts) : fusionner la branche 1_constantes dans main
 
 Réglez les éventuels conflits. Vous *devez* faire un commit de fusion; pas seulement copier-coller le code d'une branche à l'autre...
 
-** Question 1 (5 pts) : Assurez-vous d'avoir une classe compilable qui fait échouer tous les tests. Les méthodes devraient être déclarées sans être implémentées.
+** Question 1 (5 pts) : Exécuter les tests
+
+Assurez-vous d'avoir une classe compilable qui fait échouer tous les tests. Les méthodes devraient être déclarées sans être implémentées.
 
 Résultat attendu : Les 12 tests échouent
 
-** Question 2 (10 pts) : Implémentez le constructeur de Wordle.
+** Question 2 (10 pts) : Implémenter le constructeur de Wordle.
 
 Résultat attendu : 2 tests réussissent :
 
@@ -51,16 +52,16 @@ Résultat attendu : 7 tests réussissent :
   - Étant donné un mot de 3 lettres, lorsqu'on initialise un Wordle, on obtient une exception  
   - Étant donné le mot «abcde», lorsqu'on essaye un mot de 3 lettres, on obtient une exception
 
-** Question 4 (20 pts) : Implémentez `obtenirLettres`
+** Question 4 (20 pts) : Implémenter `obtenirLettres`
 
 Résultat attendu: tous les tests réussissent
   
-** Question 5 (10 pts) : Implémentez les tests de estRéussi
+** Question 5 (10 pts) : Implémenter les tests de estRéussi
 
-Ajoutez deux tests pour valider la méthode `estRéussi`
+Ajoutez deux tests pour valider la méthode `estRéussi`. Choisissez bien les noms pour refléter ce qu'ils testent. Évidemment, ils doivent passer (probablement sans avoir à modifier estRéussi)
 
 * Notes:
 
-Le résultat des tests vous assure que votre classe fonctionne comme prévu, cependant, vous devez aussi vous assurer de la qualité de votre code (suivre les normes de programmation, être lisible et optimisé)
+Le résultat des tests vous assure que votre classe fonctionne comme prévu, cependant, vous devez aussi vous assurer de la qualité de votre code (en français correct, suivre les normes de programmation, être lisible et optimisé)
 
 Vos commits doivent être effectués correctement, c'est-à-dire que seules les modifications nécessaires doivent être commitées et les messages de commit doivent être brefs mais descriptifs de vos changements.
