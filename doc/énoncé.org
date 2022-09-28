@@ -1,6 +1,6 @@
 Mise en contexte :
 
-Vous avez comme projet de réimplémenter le dernier jeu à la mode : (Wordle)[https://fr.wikipedia.org/wiki/Wordle]. Votre première ébauche est faite en ligne de commande, mais dès que vos algorithmes seront au point, vous pensez en faire une (n-ième) version pour Android.
+Vous avez comme projet de réimplémenter le dernier jeu à la mode : [[https://fr.wikipedia.org/wiki/Wordle][Wordle]]. Votre première ébauche est faite en ligne de commande, mais dès que vos algorithmes seront au point, vous pensez en faire une (n-ième) version pour Android.
 
 Vous avez définit les classes et fonctions minimales dont vous aurez besoin et vous avez bien sûr commencé par implémenter les tests qui les valident... et c'est là que vous êtes rendus. 
 
@@ -10,7 +10,7 @@ Vous avez définit les classes et fonctions minimales dont vous aurez besoin et 
 
 1. Récupérez le projet
 
- 2. Créez votre divergence de l'ébauche de projet (Wordle)[https://git.dti.crosemont.quebec/plafrance/wordle].
+ 2. Créez votre divergence de l'ébauche de projet [[https://git.dti.crosemont.quebec/plafrance/wordle][Wordle]].
 
  3. *Rendez votre divergence privée* (Menu Paramètres/Général, section «
 Visibility, project features, permissions» dans «Project visibility», sélectionnez «Private» et «Enregistrer les modification» plus bas.)
