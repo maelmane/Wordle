@@ -45,7 +45,6 @@ Résultat attendu : 7 tests réussissent :
 
   - Étant donné le mot cherché initialisé avec des minuscules, lorsqu'on récupère la propriété, on  obtient le mot en majuscules
   - Étant donné le mot «CORDE», lorsqu'on essaye le bon mot avec des minuscules, on obtient la  bonne réponse en majuscules
-  - mauvais endroit et qu'on récupère les lettres, on obtient la lettre en majuscule les lettres, on obtient la lettre en minuscule        
   - Étant donné le mot «CORDE», lorsquon essaie «ABCDE» puis «COEUR», on obtient «COe_r» 
   - Étant donné le mot «CORDE», lorsquon essaie «ABCDE», on obtient «__cDE»
   - Étant donné le mot «CORDE», lorsquon essaie «CORDE», on obtient «CORDE»
