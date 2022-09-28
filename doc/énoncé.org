@@ -12,7 +12,7 @@ Vous avez définit les classes et fonctions minimales dont vous aurez besoin et 
 
  2. Créez votre divergence de l'ébauche de projet [[https://git.dti.crosemont.quebec/plafrance/wordle][Wordle]].
 
- 3. *Rendez votre divergence privée* (Menu Paramètres/Général, section «Visibility, project features, permissions» dans «Project visibility», sélectionnez «Private» et «Enregistrer les modification» plus bas.)
+ 3. *Assurez-vous que votre divergence est privée* (sinon, rendez-la privée par le menu Paramètres/Général, section «Visibility, project features, permissions» dans «Project visibility», sélectionnez «Private» et «Enregistrer les modification» plus bas.)
 
  4. Clonez votre divergence sur votre poste.
     
