@@ -1,0 +1,66 @@
+Mise en contexte :
+
+Vous avez comme projet de réimplémenter le dernier jeu à la mode : (Wordle)[https://fr.wikipedia.org/wiki/Wordle]. Votre première ébauche est faite en ligne de commande, mais dès que vos algorithmes seront au point, vous pensez en faire une (n-ième) version pour Android.
+
+Vous avez définit les classes et fonctions minimales dont vous aurez besoin et vous avez bien sûr commencé par implémenter les tests qui les valident... et c'est là que vous êtes rendus. 
+
+*La documentation des méthodes se trouve le répertoire doc/, lisez-la attentivement!*
+
+* Étapes :
+
+1. Récupérez le projet
+
+ 2. Créez votre divergence de l'ébauche de projet (Wordle)[https://git.dti.crosemont.quebec/plafrance/wordle].
+
+ 3. *Rendez votre divergence privée* (Menu Paramètres/Général, section «
+Visibility, project features, permissions» dans «Project visibility», sélectionnez «Private» et «Enregistrer les modification» plus bas.)
+
+ 4. Clonez votre divergence sur votre poste.
+    
+ 5. Commitez et poussez votre travail sur votre bifurcation. *Ne faites pas de demande de fusion* (cela rendrait votre code visible à tous).
+   
+* À faire :
+
+Il s'agit d'un projet Gradle que vous pouvez compiler en ligne de commande, dans IntelliJ, Android Studio ou tout autre IDE qui prend en charge Gradle.
+
+** Question 0 (5 pts) : fusionnez la branche 1_constantes dans main
+
+Réglez les éventuels conflits. Vous *devez* faire un commit de fusion; pas seulement copier-coller le code d'une branche à l'autre...
+
+** Question 1 (5 pts) : Assurez-vous d'avoir une classe compilable qui fait échouer tous les tests. Les méthodes devraient être déclarées sans être implémentées.
+
+Résultat attendu : Les 12 tests échouent
+
+** Question 2 (10 pts) : Implémentez le constructeur de Wordle.
+
+Résultat attendu : 2 tests réussissent :
+
+  - Étant donné le mot cherché initialisé avec des minuscules, lorsqu'on récupère la propriété, on  obtient le mot en majuscules        
+  - Étant donné un mot de 3 lettres, lorsqu'on initialise un Wordle, on obtient une exception  0s  passed    
+
+** Question 3 (20 pts) : Implémenter `essayer`
+
+Résultat attendu : 7 tests réussissent :
+
+  - Étant donné le mot cherché initialisé avec des minuscules, lorsqu'on récupère la propriété, on  obtient le mot en majuscules
+  - Étant donné le mot «CORDE», lorsqu'on essaye le bon mot avec des minuscules, on obtient la  bonne réponse en majuscules
+  - mauvais endroit et qu'on récupère les lettres, on obtient la lettre en majuscule les lettres, on obtient la lettre en minuscule        
+  - Étant donné le mot «CORDE», lorsquon essaie «ABCDE» puis «COEUR», on obtient «COe_r» 
+  - Étant donné le mot «CORDE», lorsquon essaie «ABCDE», on obtient «__cDE»
+  - Étant donné le mot «CORDE», lorsquon essaie «CORDE», on obtient «CORDE»
+  - Étant donné un mot de 3 lettres, lorsqu'on initialise un Wordle, on obtient une exception  
+  - Étant donné le mot «abcde», lorsqu'on essaye un mot de 3 lettres, on obtient une exception
+
+** Question 4 (20 pts) : Implémentez `obtenirLettres`
+
+Résultat attendu: tous les tests réussissent
+  
+** Question 5 (10 pts) : Implémentez les tests de estRéussi
+
+Ajoutez deux tests pour valider la méthode `estRéussi`
+
+* Notes:
+
+Le résultat des tests vous assure que votre classe fonctionne comme prévu, cependant, vous devez aussi vous assurer de la qualité de votre code (suivre les normes de programmation, être lisible et optimisé)
+
+Vos commits doivent être effectués correctement, c'est-à-dire que seules les modifications nécessaires doivent être commitées et les messages de commit doivent être brefs mais descriptifs de vos changements.
