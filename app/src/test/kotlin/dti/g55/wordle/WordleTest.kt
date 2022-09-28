@@ -20,11 +20,10 @@ class WordleTest {
 	}
 	
 	@Test
-	fun `Étant donné le mot «CORDE», lorsquon essaie «ABCDE» puis «COEUR», on obtient «COe_r»`(){
+	fun `Étant donné le mot «CORDE», lorsquon essaie «COEUR», on obtient «COe_r»`(){
 		val cobaye = Wordle("CORDE")
 
 		assertEquals( "COe_r", cobaye.essayer("COEUR") )		
-		assertEquals( "CORDE", cobaye.essayer("CORDE") )		
 	}
 
 	@Test
