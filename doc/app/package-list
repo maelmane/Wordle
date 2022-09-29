@@ -10,7 +10,7 @@ $dokka.location:dti.g55.wordle/App/scan/#/PointingToDeclaration/app/dti.g55.wor
 $dokka.location:dti.g55.wordle/App/w/#/PointingToDeclaration/app/dti.g55.wordle/-app/w.html
 $dokka.location:dti.g55.wordle/Wordle///PointingToDeclaration/app/dti.g55.wordle/-wordle/index.html
 $dokka.location:dti.g55.wordle/Wordle/Wordle/#kotlin.String/PointingToDeclaration/app/dti.g55.wordle/-wordle/-wordle.html
-$dokka.location:dti.g55.wordle/Wordle/essayer/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/essayer.html
+$dokka.location:dti.g55.wordle/Wordle/essayer/#kotlin.String/PointingToDeclaration/app/dti.g55.wordle/-wordle/essayer.html
 $dokka.location:dti.g55.wordle/Wordle/estRéussi/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/est-réussi.html
 $dokka.location:dti.g55.wordle/Wordle/lettres/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/lettres.html
 $dokka.location:dti.g55.wordle/Wordle/motCherché/#/PointingToDeclaration/app/dti.g55.wordle/-wordle/mot-cherché.html
