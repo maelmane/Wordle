@@ -10,14 +10,14 @@ Vous avez définit les classes et fonctions minimales dont vous aurez besoin et 
 
 1. Récupérez le projet
 
- 2. Créez votre divergence de l'ébauche de projet (Wordle)[https://git.dti.crosemont.quebec/420-g55-ro/wordle].
+2. Créez votre divergence de l'ébauche de projet
+   [Wordle](https://git.dti.crosemont.quebec/420-g55-ro/wordle).
 
- 3. *Rendez votre divergence privée* (Menu Paramètres/Général, section «
-Visibility, project features, permissions» dans «Project visibility», sélectionnez «Private» et «Enregistrer les modification» plus bas.)
+3. *Rendez votre divergence privée* (Menu Paramètres/Général, section «Visibility, project features, permissions» dans «Project visibility», sélectionnez «Private» et «Enregistrer les modification» plus bas.)
 
- 1. Clonez votre divergence sur votre poste.
+4. Clonez votre divergence sur votre poste.
 
- 2. Effectuez les tâches demandées dans les tickets #1, #2, #3 et #4. *Pour chaque ticket* :
+5. Effectuez les tâches demandées dans les tickets #1, #2, #3 et #4. *Pour chaque ticket* :
 
     1. Créez une branche nommée «ticketX» où X est le numéro du ticket
 
@@ -25,7 +25,7 @@ Visibility, project features, permissions» dans «Project visibility», sélect
 
     3. Poussez la branche ticketX. Le pipeline déclenché devrait réussir. Sinon, c'est qu'il y a un problème avec votre travail, continuez sur la même branche jusqu'à ce que le pipeline réussisse.
     
- 3. Commitez et poussez votre travail sur votre bifurcation. *Ne faites pas de demande de fusion* (cela rendrait votre code visible à tous).
+NB: *Ne faites pas de demande de fusion* (cela rendrait votre code visible à tous).
    
 # À faire :
 
@@ -39,27 +39,29 @@ Réglez les éventuels conflits.
 
 Résultat attendu : Les 12 tests échouent
 
-## Ticket #1 : Implémentez le constructeur de Wordle.
+## Étape 2 : Implémentation :
 
-   (Ticket #1)[https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/1]
+### Ticket #1 : Implémentez le constructeur de Wordle.
+
+   [Ticket #1](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/1)
 
 Résultat attendu : Tous les tests de WordleConstructeurTest réussissent :
 
-## Ticket #2 : Implémenter `essayer`
+### Ticket #2 : Implémenter `essayer`
 
-   (Ticket #2)[https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/2]
+   [Ticket #2](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/2)
 
 Résultat attendu : Tous les tests de WordleEssayerTest réussissent :
 
-## Ticket #3 : Implémenter `obtenirLettres`
+### Ticket #3 : Implémenter `obtenirLettres`
 
-   (Ticket #3)[https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/3]
+   [Ticket #3](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/3)
 
 Résultat attendu: Tous les tests de WordleObtenirLettresTests réussissent
   
-## Ticket #4
+### Ticket #4
 
-   (Ticket #4)[https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/4]
+   [Ticket #4](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/4)
 
 Dans un fichier nommé `WordleEstReussiTests.kt`, ajoutez au moins deux tests pour valider la méthode `estRéussi`.
 
