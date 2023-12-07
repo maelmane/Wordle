@@ -33,8 +33,8 @@ class WordleObtenirLettresTests {
 	fun `Étant donné le mot «CORDE», lorsquon essaie une lettre au bon endroit puis la même lettre au mauvais endroit et qu'on récupère les lettres, on obtient la lettre en majuscule`() {
 		val cobaye = Wordle("CORDE")
 
-		cobaye.essayer("CODER")
 		cobaye.essayer("CORDE")
+		cobaye.essayer("CODER")
 		assertEquals( "**CDE*********O**R********", cobaye.obtenirLettres() )
 	}
 
