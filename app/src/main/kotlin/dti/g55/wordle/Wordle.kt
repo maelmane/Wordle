@@ -26,7 +26,7 @@ class Wordle( motCherché : String ) {
 	 * Une minuscule représente une lettre présente dans le mot dont la position est inconnue
 	 * Une majuscule représente une lettre présente dans le mot dont la position est connue
 	 *
-	 * @return L'état des 26 lettres sous forme de chaîne
+	 * @return (String) L'état des 26 lettres sous forme de chaîne
 	 *
 	 * @throws IllegalArgumentException si une lettre est dans un état illégal
 	 */
@@ -36,9 +36,9 @@ class Wordle( motCherché : String ) {
 	/**
 	 * Permet d'effectuer un essai
 	 *
-	 * @param essai Le nouveau mot essayé
+	 * @param essai (String) Le nouveau mot essayé
 	 *
-	 * @return Le résultat de l'essai sous forme d'une chaîne de 5 caractères
+	 * @return (String) Le résultat de l'essai sous forme d'une chaîne de 5 caractères
 	 *         selon les mêmes critères que pour obtenirLettres
 	 *
 	 * @throws IllegalArgumentException si le mot essayé ne comporte pas exactement 5 caractères
@@ -49,7 +49,7 @@ class Wordle( motCherché : String ) {
 	/**
 	 * Retourne Vrai si le mot a été trouvé
 	 *
-	 * @return Vrai si et seulement si toutes les lettres du mot cherché ont été trouvées
+	 * @return (Boolean) Vrai si et seulement si toutes les lettres du mot cherché ont été trouvées
 	 */
 	fun estRéussi() : Boolean {
 		return validateur( lettres )
