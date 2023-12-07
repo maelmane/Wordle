@@ -43,25 +43,25 @@ Résultat attendu du pipeline : L'étape `build` passe, l'étape `tests` échoue
 
 ## Étape 2 : Implémentation :
 
-### Ticket #1 : Implémentez le constructeur de Wordle.
+### Ticket #1 : Implémentation du constructeur de Wordle
 
    [Ticket #1](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/1)
 
 Résultat attendu du pipeline : L'étape `tests` passe; tous les tests de `WordleConstructeurTest` réussissent :
 
-### Ticket #2 : Implémenter `essayer`
+### Ticket #2 : Implémenter les essais du joueur 
 
    [Ticket #2](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/2)
 
 Résultat attendu du pipeline : L'étape `tests` passe; tous les tests de `WordleEssayerTest` réussissent :
 
-### Ticket #3 : Implémenter `obtenirLettres`
+### Ticket #3 : Résumé des lettres essayées
 
    [Ticket #3](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/3)
 
 Résultat attendu du pipeline : L'étape `tests` passe; tous les tests de `WordleObtenirLettresTests` réussissent
   
-### Ticket #4
+### Ticket #4 : Tester la validation de la réussite d'une partie
 
    [Ticket #4](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/4)
 
