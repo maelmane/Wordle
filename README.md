@@ -39,7 +39,7 @@ Réglez les éventuels conflits.
 
 ## Étape 1 : Assurez-vous d'avoir une classe compilable qui fait échouer tous les tests. Les méthodes devraient être déclarées sans être implémentées.
 
-Résultat attendu du pipeline : L'étape `build` passe, l'étape `tests` échoue avec 12 tests échoués.
+Résultat attendu du pipeline : L'étape `build` passe, l'étape `tests` échoue avec 15 tests échoués.
 
 ## Étape 2 : Implémentation :
 

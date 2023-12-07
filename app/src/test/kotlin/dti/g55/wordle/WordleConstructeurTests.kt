@@ -3,7 +3,7 @@ package dti.g55.wordle
 import kotlin.test.Test
 import kotlin.test.*;
 
-class WordleConstructeurTest {
+class WordleConstructeurTests {
 
 	@Test
 	fun `Étant donné le mot cherché initialisé avec des minuscules, lorsqu'on récupère la propriété, on obtient le mot en majuscules`(){
