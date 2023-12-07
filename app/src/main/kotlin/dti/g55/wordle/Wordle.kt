@@ -11,6 +11,10 @@ class Wordle( motCherché : String ) {
 	// Le mot cherché
 	val motCherché : String = ""
 
+	companion object {
+		var validateur = { lettres : Array<Int> -> lettres.count{ it == 2 } == 5 }
+	}
+
 	// L'état de l'ensemble des lettres possibles
 	val lettres = Array<Int>( 26 ){ 0 }
 	
@@ -48,7 +52,7 @@ class Wordle( motCherché : String ) {
 	 * @return Vrai si et seulement si toutes les lettres du mot cherché ont été trouvées
 	 */
 	fun estRéussi() : Boolean {
-		return lettres.count { it == 2 } == 5
+		return validateur( lettres )
 	}
 
 }
