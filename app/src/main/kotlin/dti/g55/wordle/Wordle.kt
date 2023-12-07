@@ -9,7 +9,8 @@ package dti.g55.wordle
  */
 class Wordle( motCherché : String ) {
 	// Le mot cherché
-	private val motCherché : String = ""
+	val motCherché : String = ""
+		private set
 
 	companion object {
 		var validateur = { lettres : Array<Int> -> lettres.count{ it == 2 } == 5 }
