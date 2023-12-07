@@ -46,5 +46,29 @@ class WordleEssayerTest {
 			assertEquals( "L'essai doit comporter exactement 5 lettres [A-Z]", e.message )
 		}
 	}
+
+	@Test
+	fun `Étant donné le mot «ABCDE», lorsqu'on essaye un mot de 6 lettres, on obtient une exception`(){
+		try{
+			val cobaye = Wordle("ABCDE")
+			cobaye.essayer("abcdef")
+			fail()
+		}
+		catch(e : IllegalArgumentException){
+			assertEquals( "L'essai doit comporter exactement 5 lettres [A-Z]", e.message )
+		}
+	}
+
+	@Test
+	fun `Étant donné le mot «ABCDE», lorsqu'on essaye un mot comportant des caractères illégaux, on obtient une exception`(){
+		try{
+			val cobaye = Wordle("ABCDE")
+			cobaye.essayer("étale")
+			fail()
+		}
+		catch(e : IllegalArgumentException){
+			assertEquals( "L'essai doit comporter exactement 5 lettres [A-Z]", e.message )
+		}
+	}
 	
 }
