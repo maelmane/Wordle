@@ -9,14 +9,14 @@ package dti.g55.wordle
  */
 class Wordle( motCherché : String ) {
 	// Le mot cherché
-	val motCherché : String = ""
+	private val motCherché : String = ""
 
 	companion object {
 		var validateur = { lettres : Array<Int> -> lettres.count{ it == 2 } == 5 }
 	}
 
 	// L'état de l'ensemble des lettres possibles
-	val lettres = Array<Int>( 26 ){ 0 }
+	private val lettres = Array<Int>( 26 ){ 0 }
 	
 	/**
 	 * Retourne l'état des 26 lettres, représentées chacune par un caractère
@@ -28,7 +28,7 @@ class Wordle( motCherché : String ) {
 	 *
 	 * @return (String) L'état des 26 lettres sous forme de chaîne
 	 *
-	 * @throws IllegalArgumentException si une lettre est dans un état illégal
+	 * @throws IllegalStateException si une lettre est dans un état illégal
 	 */
 	fun obtenirLettres() {
 	}
