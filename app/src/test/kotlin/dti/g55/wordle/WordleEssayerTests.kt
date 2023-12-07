@@ -3,7 +3,7 @@ package dti.g55.wordle
 import kotlin.test.Test
 import kotlin.test.*;
 
-class WordleEssayerTest {
+class WordleEssayerTests {
 
 	@Test
 	fun `Étant donné le mot «CORDE», lorsquon essaie «ABCDE», on obtient «__cDE»`(){

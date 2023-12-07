@@ -9,7 +9,7 @@ package dti.g55.wordle
  */
 class Wordle( motCherché : String ) {
 	// Le mot cherché
-	val motCherché : String = ""
+	var motCherché : String = ""
 		private set
 
 	companion object {
