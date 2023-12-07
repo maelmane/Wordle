@@ -6,7 +6,7 @@ Vous avez définit les classes et fonctions minimales dont vous aurez besoin et 
 
 *La documentation des méthodes se trouve le répertoire doc/, lisez-la attentivement!*
 
-# Étapes :
+# Mise en place :
 
 1. Récupérez le projet
 
@@ -16,14 +16,6 @@ Vous avez définit les classes et fonctions minimales dont vous aurez besoin et 
 3. *Rendez votre divergence privée* (Menu Paramètres/Général, section «Visibility, project features, permissions» dans «Project visibility», sélectionnez «Private» et «Enregistrer les modification» plus bas.)
 
 4. Clonez votre divergence sur votre poste.
-
-5. Effectuez les tâches demandées dans les tickets #1, #2, #3 et #4. *Pour chaque ticket* :
-
-    1. Créez une branche nommée «ticketX» où X est le numéro du ticket
-
-    2. Effectuez la tâche demandée dans le ticket et commitez votre travail sur cette branche.
-
-    3. Poussez la branche ticketX. Le pipeline déclenché devrait réussir. Sinon, c'est qu'il y a un problème avec votre travail, continuez sur la même branche jusqu'à ce que le pipeline réussisse.
     
 NB: *Ne faites pas de demande de fusion* (cela rendrait votre code visible à tous).
    
@@ -31,13 +23,23 @@ NB: *Ne faites pas de demande de fusion* (cela rendrait votre code visible à to
 
 Il s'agit d'un projet Gradle que vous pouvez compiler en ligne de commande, dans IntelliJ, Android Studio ou tout autre IDE qui prend en charge Gradle.
 
+Effectuez les tâches demandées dans les tickets #1, #2, #3 et #4. 
+
+## Pour chaque ticket :
+
+1. Créez une branche nommée «ticketX» où X est le numéro du ticket (`ticket1`, `ticket2`, etc.)
+
+2. Effectuez la tâche demandée dans le ticket et commitez votre travail sur cette branche.
+
+3. Poussez la branche ticketX. Le pipeline déclenché devrait réussir. Sinon, c'est qu'il y a un problème avec votre travail, continuez sur la même branche jusqu'à ce que le pipeline réussisse.
+
 ## Étape 0 : fusionnez la branche 1_constantes dans main
 
 Réglez les éventuels conflits.
 
 ## Étape 1 : Assurez-vous d'avoir une classe compilable qui fait échouer tous les tests. Les méthodes devraient être déclarées sans être implémentées.
 
-Résultat attendu : Les 12 tests échouent
+Résultat attendu du pipeline : L'étape `build` passe, l'étape `tests` échoue avec 12 tests échoués.
 
 ## Étape 2 : Implémentation :
 
@@ -45,25 +47,31 @@ Résultat attendu : Les 12 tests échouent
 
    [Ticket #1](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/1)
 
-Résultat attendu : Tous les tests de WordleConstructeurTest réussissent :
+Résultat attendu du pipeline : L'étape `tests` passe; tous les tests de `WordleConstructeurTest` réussissent :
 
 ### Ticket #2 : Implémenter `essayer`
 
    [Ticket #2](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/2)
 
-Résultat attendu : Tous les tests de WordleEssayerTest réussissent :
+Résultat attendu du pipeline : L'étape `tests` passe; tous les tests de `WordleEssayerTest` réussissent :
 
 ### Ticket #3 : Implémenter `obtenirLettres`
 
    [Ticket #3](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/3)
 
-Résultat attendu: Tous les tests de WordleObtenirLettresTests réussissent
+Résultat attendu du pipeline : L'étape `tests` passe; tous les tests de `WordleObtenirLettresTests` réussissent
   
 ### Ticket #4
 
    [Ticket #4](https://git.dti.crosemont.quebec/420-g55-ro/wordle/-/issues/4)
 
-Dans un fichier nommé `WordleEstReussiTests.kt`, ajoutez au moins deux tests pour valider la méthode `estRéussi`.
+Résultat attendu du pipeline : L'étape `tests` passe; tous les tests de `WordleEstReussiTests` réussissent
+
+## Étape finale
+
+Fusionnez l'implémentation de tous les tickets dans `main`
+
+Résultat attendu du pipeline : L'étape `tests` passe; *tous* les tests réussissent
 
 # Notes:
 
