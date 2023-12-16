@@ -12,6 +12,14 @@ class Wordle( motCherché : String ) {
 	var motCherché : String = ""
 		private set
 
+	init {
+		if (motCherché.length != 5){
+			throw IllegalArgumentException("Le mot cherché doit comporter exactement 5 lettres [A-Z]")
+		}
+
+		this.motCherché = motCherché.uppercase()
+	}
+
 	companion object {
 		var validateur = { lettres : Array<Int> -> lettres.count{ it == 2 } == 5 }
 	}
