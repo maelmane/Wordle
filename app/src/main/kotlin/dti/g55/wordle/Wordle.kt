@@ -98,7 +98,6 @@ class Wordle( motCherché : String ) {
 		return validateur( lettres )
 	}
 
-	//fun String.estSeulementDesLettres() = all { it.isLetter() }
 	fun estSeulementDesLettres(mot: String): Boolean {
 		val regex = Regex("^[a-zA-Z]*$")
 		return regex.matches(mot)
