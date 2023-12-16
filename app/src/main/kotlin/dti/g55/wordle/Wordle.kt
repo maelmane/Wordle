@@ -69,7 +69,24 @@ class Wordle( motCherché : String ) {
 	 * @throws IllegalArgumentException si le mot essayé ne comporte pas exactement 5 caractères
 	 */
 	fun essayer(essai : String): String {
-		return ""
+		var builder = StringBuilder()
+		if (essai.length == 5 && estSeulementDesLettres(essai)){
+			for (i in 0 .. 4){
+				builder.append('_')
+			}
+			for (lettre in motCherché.indices) {
+				if (motCherché.contains(essai.uppercase()[lettre])){
+					builder[lettre] = (essai[lettre]).lowercaseChar()
+				}
+				if(motCherché[lettre] == essai.uppercase()[lettre]){
+					builder[lettre] = essai[lettre].uppercaseChar()
+				}
+			}
+		}
+		else {
+			throw IllegalArgumentException("L'essai doit comporter exactement 5 lettres [A-Z]")
+		}
+		return (builder.toString())
 	}
 
 	/**
