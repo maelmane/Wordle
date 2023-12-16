@@ -13,7 +13,7 @@ class Wordle( motCherché : String ) {
 		private set
 
 	init {
-		if (motCherché.length != 5 || !motCherché.estSeulementDesLettres()){
+		if (motCherché.length != 5 || !estSeulementDesLettres(motCherché)){
 			throw IllegalArgumentException("Le mot cherché doit comporter exactement 5 lettres [A-Z]")
 		}
 
@@ -81,5 +81,9 @@ class Wordle( motCherché : String ) {
 		return validateur( lettres )
 	}
 
-	fun String.estSeulementDesLettres() = all { it.isLetter() }
+	//fun String.estSeulementDesLettres() = all { it.isLetter() }
+	fun estSeulementDesLettres(mot: String): Boolean {
+		val regex = Regex("^[a-zA-Z]*$")
+		return regex.matches(mot)
+	}
 }
