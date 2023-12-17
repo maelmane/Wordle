@@ -1,5 +1,7 @@
 package dti.g55.wordle
 
+import java.lang.IllegalStateException
+
 /**
  * Un mot mystère de type Wordle
  *
@@ -12,8 +14,10 @@ class Wordle( motCherché : String ) {
 	var motCherché : String = ""
 		private set
 
+	// Longueur du mot cherché et des essais
+	val LONGUEUR_MOT = 5
 	init {
-		if (motCherché.length != 5 || !estSeulementDesLettres(motCherché)){
+		if (motCherché.length != LONGUEUR_MOT || !estSeulementDesLettres(motCherché)){
 			throw IllegalArgumentException("Le mot cherché doit comporter exactement 5 lettres [A-Z]")
 		}
 
@@ -27,8 +31,7 @@ class Wordle( motCherché : String ) {
 	// L'état de l'ensemble des lettres possibles
 	private val lettres = Array<Int>( 26 ){ 0 }
 
-	// Longueur du mot cherché et des essais
-	val LONGUEUR_MOT = 5
+
 
 	// Les états possibles pour une lettre
 
@@ -40,7 +43,7 @@ class Wordle( motCherché : String ) {
 	val ÉTAT_CORRECTE = 2
 	// La lettre dans le mot, sa position est inconnue
 	val ÉTAT_PRÉSENTE = 3
-
+	var état_actuel = 0
 	
 	/**
 	 * Retourne l'état des 26 lettres, représentées chacune par un caractère
@@ -55,7 +58,17 @@ class Wordle( motCherché : String ) {
 	 * @throws IllegalStateException si une lettre est dans un état illégal
 	 */
 	fun obtenirLettres(): String {
-		return ""
+		var builder = StringBuilder()
+		for (i in 'a' .. 'z'){
+			when (état_actuel) {
+				ÉTAT_INCONNUE -> builder.append('*')
+				ÉTAT_ABSENTE -> builder.append('_')
+				ÉTAT_CORRECTE -> builder.append('a')
+				ÉTAT_PRÉSENTE -> builder.append('A')
+				else -> throw IllegalStateException("La lettre est dans un état illégal")
+			}
+		}
+		return builder.toString()
 	}
 
 	/**
@@ -70,7 +83,7 @@ class Wordle( motCherché : String ) {
 	 */
 	fun essayer(essai : String): String {
 		var builder = StringBuilder()
-		if (essai.length == 5 && estSeulementDesLettres(essai)){
+		if (essai.length == LONGUEUR_MOT && estSeulementDesLettres(essai)){
 			for (i in 0 .. 4){
 				builder.append('_')
 			}
@@ -98,7 +111,6 @@ class Wordle( motCherché : String ) {
 		return validateur( lettres )
 	}
 
-	//fun String.estSeulementDesLettres() = all { it.isLetter() }
 	fun estSeulementDesLettres(mot: String): Boolean {
 		val regex = Regex("^[a-zA-Z]*$")
 		return regex.matches(mot)
