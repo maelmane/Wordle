@@ -43,7 +43,6 @@ class Wordle( motCherché : String ) {
 	val ÉTAT_CORRECTE = 2
 	// La lettre dans le mot, sa position est inconnue
 	val ÉTAT_PRÉSENTE = 3
-	var état_actuel = 0
 	
 	/**
 	 * Retourne l'état des 26 lettres, représentées chacune par un caractère
@@ -58,13 +57,13 @@ class Wordle( motCherché : String ) {
 	 * @throws IllegalStateException si une lettre est dans un état illégal
 	 */
 	fun obtenirLettres(): String {
-		var builder = StringBuilder()
-		for (i in 'a' .. 'z'){
-			when (état_actuel) {
+		val builder = StringBuilder()
+		for (lettre in 0 until 26){
+			when (lettres[lettre]) {
 				ÉTAT_INCONNUE -> builder.append('*')
 				ÉTAT_ABSENTE -> builder.append('_')
-				ÉTAT_CORRECTE -> builder.append('a')
-				ÉTAT_PRÉSENTE -> builder.append('A')
+				ÉTAT_CORRECTE -> builder.append(('A' + lettre).toChar().lowercaseChar())
+				ÉTAT_PRÉSENTE -> builder.append(('A' + lettre).toChar().uppercaseChar())
 				else -> throw IllegalStateException("La lettre est dans un état illégal")
 			}
 		}
@@ -82,23 +81,27 @@ class Wordle( motCherché : String ) {
 	 * @throws IllegalArgumentException si le mot essayé ne comporte pas exactement 5 caractères
 	 */
 	fun essayer(essai : String): String {
-		var builder = StringBuilder()
-		if (essai.length == LONGUEUR_MOT && estSeulementDesLettres(essai)){
-			for (i in 0 .. 4){
-				builder.append('_')
-			}
-			for (lettre in motCherché.indices) {
-				if (motCherché.contains(essai.uppercase()[lettre])){
-					builder[lettre] = (essai[lettre]).lowercaseChar()
-				}
-				if(motCherché[lettre] == essai.uppercase()[lettre]){
-					builder[lettre] = essai[lettre].uppercaseChar()
-				}
-			}
-		}
-		else {
+		if (essai.length != LONGUEUR_MOT || !estSeulementDesLettres(essai)) {
 			throw IllegalArgumentException("L'essai doit comporter exactement 5 lettres [A-Z]")
 		}
+
+		val builder = StringBuilder()
+
+		for (lettre in 0 until LONGUEUR_MOT) {
+			if (motCherché[lettre] == essai[lettre].uppercaseChar()) {
+				builder.append(essai[lettre].uppercaseChar())
+				lettres[essai[lettre].uppercaseChar() - 'A'] = ÉTAT_PRÉSENTE
+			} else if (motCherché.contains(essai[lettre].uppercaseChar())) {
+				builder.append(essai[lettre].lowercaseChar())
+				if (lettres[essai[lettre].uppercaseChar() - 'A'] != ÉTAT_PRÉSENTE) {
+					lettres[essai[lettre].uppercaseChar() - 'A'] = ÉTAT_CORRECTE
+				}
+			} else {
+				builder.append('_')
+				lettres[essai[lettre].uppercaseChar() - 'A'] = ÉTAT_ABSENTE
+			}
+		}
+
 		return (builder.toString())
 	}
 
