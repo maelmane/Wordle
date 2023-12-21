@@ -25,7 +25,7 @@ class Wordle( motCherché : String ) {
 	}
 
 	companion object {
-		var validateur = { lettres : Array<Int> -> lettres.count{ it == 2 } == 5 }
+		var validateur = { lettres : Array<Int> -> lettres.count{ it == 3 } == 5 }
 	}
 
 	// L'état de l'ensemble des lettres possibles
@@ -43,7 +43,7 @@ class Wordle( motCherché : String ) {
 	val ÉTAT_CORRECTE = 2
 	// La lettre dans le mot, sa position est inconnue
 	val ÉTAT_PRÉSENTE = 3
-	
+
 	/**
 	 * Retourne l'état des 26 lettres, représentées chacune par un caractère
 	 *
